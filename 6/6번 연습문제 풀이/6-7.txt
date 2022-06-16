@@ -1,0 +1,11 @@
+CBV_SRV_UAV 서술자 힙을 만들때 서술자 크기를 2로 하고
+서술자 힙의 핸들을 이동시켜가며 상수 버퍼 서술자를 두개 채운다.
+
+update()에서 업로드 힙에 있는 상수 버퍼에 변환 행렬 값을 갱신한다.
+두개의 버퍼에 각각 다른 값을 갱신 (이동변환 적용된 것과 아닌 것)
+
+SetGraphicsRootDescriptorTable(0,  서술자 힙 handle(맨 앞))
+그리기 // 첫 번째 서술자 그려짐
+handle.Offset(1, mCbvSrvUavDescriptorSize) // 핸들 한칸 움직이고
+SetGraphicsRootDescriptorTable(0, 서술자 힙 handle)
+그리기 // 두 번째 서술자로 그려짐
