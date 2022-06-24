@@ -1,2 +1,7 @@
-﻿  BoxApp.cpp
+﻿  d3dApp.cpp
+  d3dUtil.cpp
+  GameTimer.cpp
+  MathHelper.cpp
+  BoxApp.cpp
+  코드를 생성하고 있습니다...
   Box.vcxproj -> C:\Users\lemon\DirectX12Study\Directx12_study\6\Chapter 6 Drawing in Direct3D\Box\x64\Debug\Box.exe
